@@ -8,6 +8,7 @@ body {
   margin: 0;
   color: white;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 .backimg {
@@ -239,7 +240,7 @@ section {
   padding: 20px 10px;
   list-style: none;
   font-size: 1.2rem;
-  margin-top: 30px;
+  margin: auto;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -252,6 +253,11 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 80%;
+}
+
+.tokenomics .cont ul .subhead {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .tokenomics .cont ul li {
@@ -281,6 +287,70 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.footerlinks {
+  min-height: 15vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+}
+
+.footerlinks .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+}
+
+.footerlinks .buttons a {
+  z-index: 10;
+  margin: 10px;
+}
+
+.footerlinks .buttons a button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #03a9f4;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footerlinks .socialmedia {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerlinks .socialmedia div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto 25px;
+  font-size: 1.2rem;
+}
+
+.footerlinks .socialmedia img {
+  margin: 0px 10px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -379,6 +449,15 @@ section {
   }
   .footer .euphoric {
     margin-top: 22rem;
+  }
+  .footerlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerlinks div {
+    margin: 5px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

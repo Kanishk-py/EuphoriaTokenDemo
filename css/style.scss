@@ -15,6 +15,7 @@ body {
 	// background: black;
 	color: white;
 	font-family: "Montserrat", sans-serif;
+	position: relative;
 }
 
 .backimg {
@@ -199,12 +200,17 @@ section {
 			padding: 20px 10px;
 			list-style: none;
 			font-size: 1.2rem;
-			margin-top: 30px;
+			// margin-top: 30px;
+			margin: auto;
 			text-align: center;
 			justify-content: center;
 			display: flex;
 			flex-direction: column;
 			height: 80%;
+			.subhead {
+				text-align: center;
+				font-size: 1.5rem;
+			}
 			li {
 				padding: 5px;
 			}
@@ -226,6 +232,51 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+}
+
+.footerlinks {
+	min-height: 15vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: row;
+	padding: 30px 0px;
+	justify-content: space-evenly;
+	position: absolute;
+	bottom: 0;
+	.buttons {
+		display: flex;
+		z-index: 5;
+		a {
+			z-index: 10;
+			margin: 10px;
+			button {
+				width: 100%;
+				padding: 15px;
+				border: none;
+				border-radius: 10px;
+				background-color: #03a9f4;
+				color: white;
+				font-size: 1.2rem;
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.socialmedia {
+		text-align: center;
+		display: flex;
+		div {
+			display: flex;
+			align-content: center;
+			margin: auto 25px;
+			font-size: 1.2rem;
+		}
+		img {
+			margin: 0px 10px;
+		}
+	}
 }
 
 @media only screen and (max-width: 800px) {
@@ -306,6 +357,13 @@ section {
 		}
 		.euphoric {
 			margin-top: 22rem;
+		}
+	}
+
+	.footerlinks {
+		flex-direction: column;
+		div {
+			margin: 5px 0;
 		}
 	}
 }
