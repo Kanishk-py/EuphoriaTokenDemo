@@ -4,7 +4,7 @@ if (window.screen.width > 800) {
 	let tl = gsap.timeline();
 
 	tl.from(".logo", { opacity: 0, scale: 0, rotation: 360, ease: "back", duration: 2 });
-	// tl.from(".homeSideImg", { opacity: 0, y: 50, ease: "power1.out", duration: 1 });
+	tl.from(".home .head, .home .cont", { opacity: 0, y: 50, ease: "power1.out", duration: 1, stagger: 0.5 });
 	tl.to(".logo", {
 		y: 10,
 		yoyo: true,
@@ -105,6 +105,7 @@ if (window.screen.width > 800) {
 		padding: "30px 0",
 	});
 }
+
 gsap.from(".about", {
 	scrollTrigger: {
 		trigger: ".about",
@@ -135,16 +136,16 @@ gsap.from(".cont1, .cont2 ", {
 	opacity: 0,
 });
 
-gsap.to("#img1", {
-	scrollTrigger: {
-		trigger: ".about",
-		scrub: true,
-		// markers: true,
-		start: "center bottom",
-		end: "bottom center",
-	},
-	clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
-});
+// gsap.to("#img1", {
+// 	scrollTrigger: {
+// 		trigger: ".about",
+// 		scrub: true,
+// 		// markers: true,
+// 		start: "center bottom",
+// 		end: "bottom center",
+// 	},
+// 	clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+// });
 
 // gsap.to("#img2", {
 // 	scrollTrigger: {
