@@ -220,8 +220,16 @@ section {
 
 .roadmap .note {
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .tokenomics {
@@ -272,7 +280,7 @@ section {
   padding: 20px 10px;
   list-style: none;
   font-size: 1.2rem;
-  margin: auto 100px;
+  margin: auto 80px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -298,9 +306,17 @@ section {
 
 .tokenomics .note {
   font-size: 1.5rem;
-  margin: 100px 0px;
+  margin: 20px auto;
+  margin-top: 80px;
+  padding: 50px;
   text-align: center;
-  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .footer {
@@ -366,6 +382,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 5;
+}
+
+.footerlinks .socialmedia a {
+  z-index: 10;
 }
 
 .footerlinks .socialmedia div {
