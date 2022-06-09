@@ -97,10 +97,11 @@ if (window.screen.width > 800) {
 			trigger: ".tokenomics",
 			scrub: 1,
 			// markers: true,
-			start: "20% bottom",
-			end: "center center",
+			start: "10% bottom",
+			end: "10% center",
 		},
-		x: 550,
+		width: "100%",
+		padding: "30px 0",
 	});
 }
 gsap.from(".about", {
