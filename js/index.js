@@ -87,7 +87,8 @@ if (window.screen.width > 800) {
 				start: "top center",
 				end: "center center",
 			},
-			x: -170,
+			x: -120,
+			scale: 0.8,
 			rotation: 0,
 		}
 	);
